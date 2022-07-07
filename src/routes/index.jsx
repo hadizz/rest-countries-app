@@ -4,14 +4,14 @@ import DetailsPage from "../containers/Details";
 import NotFoundPage from "../containers/NotFound";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-const baseUrl = process.env.NODE_ENV === "development" ? "/" : "/rest-countries-app/";
+export const appBaseUrl = process.env.NODE_ENV === "development" ? "/" : "/rest-countries-app/";
 
 const AppRoutes = () => (
     <Router>
         <Routes>
-            <Route path={baseUrl}>
+            <Route path={appBaseUrl}>
                 <Route index element={<HomePage/>}/>
-                <Route path={`${baseUrl}country`}>
+                <Route path={`${appBaseUrl}country`}>
                     <Route path=':id' element={<DetailsPage/>}/>
                 </Route>
                 <Route index element={<NotFoundPage/>}/>

@@ -7,6 +7,7 @@ import {useNavigate, useParams} from "react-router-dom";
 import useIsMounted from "../../core/hooks/useIsMounted";
 import numberWithCommas from "../../shared/utilities/numberWithCommas";
 import generateClassName from "../../shared/utilities/generateClassName";
+import {appBaseUrl} from "../../routes";
 
 const DetailsPage = () => {
     const isMounted = useIsMounted();
@@ -99,7 +100,7 @@ const DetailsPage = () => {
                                             onClick={() => {
                                                 setIsLoading(true)
                                                 setIsLoadingBorders(true)
-                                                navigate('/country/' + i?.name)
+                                                navigate(appBaseUrl + 'country/' + i?.name)
                                             }}
                                         />
                                     )
