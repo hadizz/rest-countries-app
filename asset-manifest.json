@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alibaba-assessment-countries/static/css/main.84508349.css",
+    "main.js": "/alibaba-assessment-countries/static/js/main.a48e3d00.js",
+    "index.html": "/alibaba-assessment-countries/index.html",
+    "main.84508349.css.map": "/alibaba-assessment-countries/static/css/main.84508349.css.map",
+    "main.a48e3d00.js.map": "/alibaba-assessment-countries/static/js/main.a48e3d00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84508349.css",
+    "static/js/main.a48e3d00.js"
+  ]
+}
