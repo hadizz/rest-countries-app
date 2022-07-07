@@ -100,7 +100,7 @@ const DetailsPage = () => {
                                             onClick={() => {
                                                 setIsLoading(true)
                                                 setIsLoadingBorders(true)
-                                                navigate(appBaseUrl + 'country/' + i?.name)
+                                                navigate('country/' + i?.name)
                                             }}
                                         />
                                     )
