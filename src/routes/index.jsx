@@ -5,14 +5,13 @@ import NotFoundPage from "../containers/NotFound";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 export const appBaseUrl = process.env.NODE_ENV === "development" ? "/" : "/rest-countries-app/";
-console.log(appBaseUrl)
 
 const AppRoutes = () => (
-    <Router>
+    <Router basename={appBaseUrl}>
         <Routes>
-            <Route path={appBaseUrl}>
+            <Route path={'/'}>
                 <Route index element={<HomePage/>}/>
-                <Route path={`${appBaseUrl}country`}>
+                <Route path={`country`}>
                     <Route path=':id' element={<DetailsPage/>}/>
                 </Route>
                 <Route index element={<NotFoundPage/>}/>
