@@ -13,7 +13,10 @@ const changeTheme = (matchesDark) => {
 };
 
 const AppContextProvider = (props) => {
-    const [isDarkMode, setIsDarkMode] = useState(getItemFromStorage(THEME_STORAGE_KEY) === THEME_DARK_KEY);
+    const matchMedia = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeItem = getItemFromStorage(THEME_STORAGE_KEY);
+    const initialDarkModeData = !!darkModeItem ? darkModeItem === THEME_DARK_KEY : matchMedia.matches;
+    const [isDarkMode, setIsDarkMode] = useState(initialDarkModeData);
 
     const changeDarkMode = useCallback(() => setIsDarkMode(!isDarkMode), [isDarkMode])
 
@@ -22,10 +25,9 @@ const AppContextProvider = (props) => {
             let matchesDark = event.matches;
             setIsDarkMode(matchesDark)
         }
-        const matchMedia = window.matchMedia('(prefers-color-scheme: dark)');
         matchMedia.addEventListener('change', handleOnChangeColorScheme);
         return () => matchMedia.removeEventListener('change', handleOnChangeColorScheme)
-    }, [])
+    }, [matchMedia])
 
     useEffect(() => {
         // listen for changing when click button or system preferences change
