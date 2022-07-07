@@ -7,6 +7,8 @@ written with React with love❤️
 
 ## Running Locally
 
+### with npm
+
 install [node.js](http://nodejs.org/)
 
 and clone the repo
@@ -17,5 +19,8 @@ npm install
 npm run start
 ```
 
+### with Docker
 
-
+```
+docker-compose up -d --build
+```
