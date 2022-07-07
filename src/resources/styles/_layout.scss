@@ -1,0 +1,127 @@
+@import "variables";
+
+.container {
+  padding: 32px 24px;
+  @media screen and (min-width: $breakPoint-tablet) {
+    padding: 24px 64px;
+  }
+}
+
+.reset-decoration {
+  text-decoration: none;
+}
+
+.w100 {
+  width: 100%;
+}
+
+// font
+.fs-small {
+  font-size: $fontSize-small;
+}
+
+.fs-base {
+  font-size: $fontSize-base;
+}
+
+.fs-medium {
+  font-size: $fontSize-medium;
+}
+
+.fs-big {
+  font-size: $fontSize-big;
+}
+
+.fs-extra {
+  font-size: $fontSize-extra;
+}
+
+.fw-300 {
+  font-weight: $fontWeight-300;
+}
+
+.fw-600 {
+  font-weight: $fontWeight-600;
+}
+
+.fw-800 {
+  font-weight: $fontWeight-800;
+}
+
+// box shadow
+.shadow-base {
+  box-shadow: $boxShadowBase;
+}
+
+// border radius
+.radius-small {
+  border-radius: $borderRadius-small;
+}
+
+// flex
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-x-end,
+.justify-content-endz {
+  justify-content: flex-end;
+}
+
+.flex-x-between,
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-x-around,
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.flex-x-evenly,
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-x-center,
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-y-center,
+.align-items-center {
+  align-items: center;
+}
+
+.flex-over-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

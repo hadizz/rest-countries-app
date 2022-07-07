@@ -1,0 +1,42 @@
+// colors
+$colorBlue-1: hsl(209, 23%, 22%);
+$colorBlue-2: hsl(207, 26%, 17%);
+$colorBlue-3: hsl(200, 15%, 8%);
+$colorGrey-1: hsl(0, 0%, 52%);
+$colorGrey-2: hsl(0, 0%, 98%);
+$colorWhite: white;
+$colorRed: red;
+
+// typography
+$fontFamily-base: "Nunito Sans", sans-serif;
+$fontWeight-300: 300;
+$fontWeight-600: 600;
+$fontWeight-800: 800;
+
+// fontSizes
+$fontSize-small: 14px;
+$fontSize-base: 16px;
+$fontSize-medium: 18px;
+$fontSize-big: 24px;
+$fontSize-extra: 36px;
+
+// breakPoints
+$breakPoint-mobile: 375px;
+$breakPoint-tablet: 768px;
+$breakPoint-desktop: 1440px;
+
+// box shadow
+$boxShadowBase: 0px 0px 9px rgb(0 0 0 / 10%);
+
+// radius
+$borderRadius-small: 4px;
+$borderRadius-base: 8px;
+
+// palette
+$alibaba-palette: 'colorWhite' $colorWhite,
+'colorBlue-1' $colorBlue-1,
+'colorBlue-2' $colorBlue-2,
+'colorBlue-3' $colorBlue-3,
+'colorGrey-1' $colorGrey-1,
+'colorGrey-2' $colorGrey-2,
+'colorRed' $colorRed,

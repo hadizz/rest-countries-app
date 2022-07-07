@@ -1,0 +1,36 @@
+@import "mixins/index";
+@import "variables";
+@import "layout";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // light mode
+  background-color: #fafafa;
+  color: $colorBlue-3;
+  font-family: $fontFamily-base;
+  font-size: $fontSize-base;
+  font-weight: $fontWeight-300;
+
+  input {
+    &::placeholder {
+      color: #d5d5d5;
+    }
+  }
+
+  // dark mode
+  &.dark {
+    color: white;
+    background-color: $colorBlue-2;
+
+    input {
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+}

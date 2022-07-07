@@ -1,0 +1,45 @@
+@mixin marginSpace {
+  $spaceAmounts: (0, 2, 4, 6, 8, 12, 16, 24, 32, 64);
+  $sides: (top, bottom, left, right);
+  $singleMargin: 4;
+
+  @each $space in $spaceAmounts {
+    @each $side in $sides {
+      .m#{str-slice($side, 0, 1)}-#{$space} {
+        margin-#{$side}: #{$space}px !important;
+      }
+
+      .p#{str-slice($side, 0, 1)}-#{$space} {
+        padding-#{$side}: #{$space}px !important;
+      }
+
+      @each $i in $singleMargin {
+        .m-#{$space} {
+          margin: #{$space}px !important;
+        }
+
+        .p-#{$space} {
+          padding: #{$space}px !important;
+        }
+
+        .mx-#{$space} {
+          margin: 0 #{$space}px !important;
+        }
+
+        .my-#{$space} {
+          margin: #{$space}px 0 !important;
+        }
+
+        .px-#{$space} {
+          padding-right: #{$space}px !important;
+          padding-left: #{$space}px !important;
+        }
+
+        .py-#{$space} {
+          padding-top: #{$space}px !important;
+          padding-bottom: #{$space}px !important;
+        }
+      }
+    }
+  }
+}

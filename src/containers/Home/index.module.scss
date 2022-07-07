@@ -1,0 +1,31 @@
+@import "../../resources/styles/variables";
+
+.filterBar {
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    margin-top: 8px;
+  }
+
+  @media screen and (min-width: $breakPoint-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cards {
+  padding: 36px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 100%);
+  grid-gap: 36px;
+
+  @media screen and (min-width: $breakPoint-tablet) {
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 300px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

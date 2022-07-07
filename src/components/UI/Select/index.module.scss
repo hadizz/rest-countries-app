@@ -1,0 +1,28 @@
+@import "../../../resources/styles/variables";
+
+.root {
+  position: relative;
+  width: 250px;
+
+  .button {
+    padding: 16px 24px;
+  }
+
+  .list {
+    width: 250px;
+    position: absolute;
+    z-index: 10;
+    top: 62px;
+    list-style: none;
+    padding: 8px;
+
+    li {
+      padding: 12px 24px;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: $fontWeight-600;
+      }
+    }
+  }
+}

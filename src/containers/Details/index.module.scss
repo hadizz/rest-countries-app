@@ -1,0 +1,100 @@
+@import "src/resources/styles/variables";
+
+.back {
+  padding: 8px 36px;
+  box-shadow: $boxShadowBase;
+  width: 120px;
+  height: 40px;
+  border-radius: $borderRadius-base;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: unset;
+}
+
+.root {
+  // mobile first design
+  .flag {
+    margin-top: 36px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      box-shadow: $boxShadowBase;
+      border-radius: $borderRadius-base;
+    }
+  }
+
+  .details {
+    margin-top: 36px;
+
+    .pairs {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .borders {
+      margin-top: 16px;
+
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        margin-top: 8px;
+        font-weight: $fontWeight-600;
+      }
+
+      .items {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakPoint-tablet) {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+
+    .flag {
+      flex-basis: 50%;
+      margin-right: 48px;
+      align-self: self-start;
+    }
+
+    .details {
+      margin-top: initial;
+      flex-basis: 50%;
+      justify-self: flex-start;
+
+      .pairs {
+        flex-direction: row;
+        justify-content: space-between;
+
+      }
+
+      .borders {
+        display: flex;
+        margin-top: 36px;
+
+        .title {
+          min-width: 150px;
+        }
+
+        .items {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+
+
+  @media screen and (min-width: $breakPoint-desktop) {
+    .flag {
+      max-width: 550px;
+    }
+  }
+}
