@@ -5,6 +5,7 @@ import NotFoundPage from "../containers/NotFound";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 export const appBaseUrl = process.env.NODE_ENV === "development" ? "/" : "/rest-countries-app/";
+console.log(appBaseUrl)
 
 const AppRoutes = () => (
     <Router>
