@@ -1,6 +1,6 @@
 {
   "name": "alibaba-assessment-countries",
-  "homepage": "https://hadizz.github.io/alibaba-assessment-countries",
+  "homepage": "https://hadizz.github.io/rest-countries-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
