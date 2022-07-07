@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+build
+.dockerignore
+package-lock.json
+**/.git
+**/.DS_Store
+**/node_modules
