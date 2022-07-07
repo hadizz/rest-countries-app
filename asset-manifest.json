@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/alibaba-assessment-countries/static/css/main.84508349.css",
-    "main.js": "/alibaba-assessment-countries/static/js/main.a48e3d00.js",
-    "index.html": "/alibaba-assessment-countries/index.html",
-    "main.84508349.css.map": "/alibaba-assessment-countries/static/css/main.84508349.css.map",
-    "main.a48e3d00.js.map": "/alibaba-assessment-countries/static/js/main.a48e3d00.js.map"
+    "main.css": "/rest-countries-app/static/css/main.84508349.css",
+    "main.js": "/rest-countries-app/static/js/main.64f4b2f8.js",
+    "index.html": "/rest-countries-app/index.html",
+    "main.84508349.css.map": "/rest-countries-app/static/css/main.84508349.css.map",
+    "main.64f4b2f8.js.map": "/rest-countries-app/static/js/main.64f4b2f8.js.map"
   },
   "entrypoints": [
     "static/css/main.84508349.css",
-    "static/js/main.a48e3d00.js"
+    "static/js/main.64f4b2f8.js"
   ]
 }
